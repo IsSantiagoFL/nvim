@@ -41,3 +41,9 @@ inoremap ,lo <Esc>:-1read ~/.config/nvim/templates/.lorem<CR>
 "
 	
 
+"3.1. HTML
+"-----------------------------------------------
+"Autocompletar el cierre de las etiquetas HTML
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+"Creando una abrieviatura para el comando anterior
+:ab <<< </<C-x><C-o>
