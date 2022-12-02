@@ -40,4 +40,9 @@ inoremap ,lo <Esc>:-1read ~/.config/nvim/templates/.lorem<CR>
 "Snipets: Partes de codigo reutilizables.
 "
 	
-
+" 3.1.HTML
+" -----------------------------------------------
+Autocompletar el cierre de las etiquetas HTML
+autocmd  FileType  html  set  omnifunc = htmlcomplete#CompleteTags
+Creando una abreviatura para el comando anterior
+: ab  <<< </<Cx><Co>
